@@ -1,0 +1,9 @@
+<!--pages/home/childCnps/recommend/recommend.wxml-->
+<view class='recommend'>
+  <block wx:for="{{recommend}}" wx:key="index">
+    <view class='recommend-item'>
+      <image src="{{item.image}}" mode="widthFix" bind:load="imageLoad"/>
+      <view><text>{{item.title}}</text></view>
+    </view>
+  </block>
+</view>

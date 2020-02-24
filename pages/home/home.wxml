@@ -1,2 +1,29 @@
 <!--pages/home/home.wxml-->
-<text>Hello World!</text>
+
+<!-- 轮播图展示 -->
+<v-swiper banners="{{banners}}"/>
+
+<!-- 推荐信息展示 -->
+<v-recommend recommend="{{recommend}}"  bind:imageLoad="imgLoad"/>
+
+<!-- 推荐图展示 -->
+<v-populer/>
+
+<!-- 商品控件展示 -->
+<v-tab-control titles="{{titles}}" 
+               bind:tabclick="tabClick"       
+               class="top-control"
+               wx:if="{{showControl}}"/>
+<v-tab-control titles="{{titles}}" 
+               bind:tabclick="tabClick"
+               wx:if="{{!showControl}}"
+               class="tab-control"/>
+
+<!-- 商品展示 -->
+<v-goods goods="{{goods[currentType].list}}"/>
+
+<!-- 回到顶部箭头 -->
+<!-- 自定义组件hidden无效 -->
+<v-back-top wx:if="{{showBack}}"/>
+
+

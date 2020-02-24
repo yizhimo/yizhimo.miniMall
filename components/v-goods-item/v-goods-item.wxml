@@ -1,0 +1,13 @@
+<!--components/v-goods-item/v-goods-item.wxml-->
+<view class='goods-item'>
+  <image class='image' src="{{goodsitem.show.img}}" mode='widthFix'/>
+  <view class='desc-info'>
+    <view class='title'>{{goodsitem.title}}</view>
+    <view class='info'>
+      <text class='price'>¥{{goodsitem.price}}</text>
+      <image class='icon' src="/assets/images/common/favor.png"/>
+      <text class='cfav'>{{goodsitem.cfav}}</text>
+    </view>
+  </view>
+</view>
+

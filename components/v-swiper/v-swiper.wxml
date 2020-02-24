@@ -1,0 +1,15 @@
+<!--components/v-swiper/v-swiper.wxml-->
+<swiper class="swiper"
+        autoplay
+        interval="3000"
+        indicator-dots
+        circular
+        indicator-color="#ffffff"
+        indicator-active-color="#ff5777">
+  <block wx:for="{{banners}}" wx:key="index">
+    <swiper-item class="swiper-item">
+      <!-- widthFix是根据大小对应图片正确的尺寸 -->
+      <image src="{{item.image}}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>

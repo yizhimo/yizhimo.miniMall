@@ -1,0 +1,6 @@
+<!--pages/home/childCpns/v-populer/v-populer.wxml-->
+<view class="populer">
+  <image src="/assets/images/home/populer.jpg" mode="widthFix"></image>
+</view>
+
+<!-- mode="widthFix"  根据宽度调整高度 -->
