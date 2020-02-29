@@ -1,2 +1,7 @@
 <!--pages/category/category.wxml-->
-<text>正在施工。。。</text>
+<view class='category'>
+  <!-- 左边展示 -->
+  <v-menu categories="{{categories}}" bind:menuclick="menuClick"/>
+  <!-- 右边展示 -->
+  <v-content subcategories="{{categoryData[currentIndex].subcategories}}"/>
+</view>

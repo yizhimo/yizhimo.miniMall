@@ -1,0 +1,12 @@
+<!--pages/category/childCpns/v-content/v-content.wxml-->
+<scroll-view class='content' scroll-y>
+  <!-- 1.子类别展示 -->
+  <view class='subcategory'>
+    <block wx:for="{{subcategories}}" wx:key="index">
+      <view class='item'>
+        <image src="{{item.image}}" mode='widthFix'/>
+        <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>

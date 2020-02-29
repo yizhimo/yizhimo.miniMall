@@ -1,1 +1,13 @@
 /* pages/category/category.wxss */
+.category {
+  height: 100%;
+  display: flex;
+}
+
+.category v-menu {
+  flex: 3;
+}
+
+.category v-content {
+  flex: 7;
+}
