@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class='detail'
+             scroll-y>
+  <!-- 轮播图 -->
+  <v-swiper class='d-swiper' banners="{{topImages}}"/>
+
+  <!-- 基本信息 -->
+  <v-base-info baseInfo="{{baseInfo}}"/>
+
+  <!-- 店铺信息 -->
+  <v-shop-info shopInfo="{{shopInfo}}"/>
+
+  <!-- 商品(图片)信息 -->
+  <v-detail-info detailInfo="{{detailInfo}}"/>
+
+  <!-- 参数信息 -->
+  <v-param-info paramInfo="{{paramInfo}}"/>
+
+  <!-- 推荐信息 -->
+  <v-comment-info commentInfo="{{commentInfo}}"/>
+</scroll-view>

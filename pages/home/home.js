@@ -25,7 +25,9 @@ Page({
     getMultiData().then(res => {
       // console.log(res)
       //取到轮播图和推荐数据
-      const banners = res.data.data.banner.list;
+      const banners = res.data.data.banner.list.map(item => {
+        return item.image
+      });
       const recommend = res.data.data.recommend.list;
       //放到data中
       this.setData({

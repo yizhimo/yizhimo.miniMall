@@ -1,0 +1,8 @@
+/* pages/detail/detail.wxss */
+.detail {
+  height: 100vh;
+}
+
+.d-swiper swiper {
+  height: 600rpx;
+}

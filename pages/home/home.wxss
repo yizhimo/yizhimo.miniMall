@@ -7,3 +7,7 @@
   z-index: 9;
   background: #fff;
 }
+
+.swiper swiper {
+  height: 400rpx;
+}

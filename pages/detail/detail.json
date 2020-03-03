@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "v-swiper": "/components/v-swiper/v-swiper",
+    "v-base-info": "./childCpns/v-base-info/v-base-info",
+    "v-shop-info": "./childCpns/v-shop-info/v-shop-info",
+    "v-detail-info": "./childCpns/v-detail-info/v-detail-info",
+    "v-param-info": "./childCpns/v-param-info/v-param-info",
+    "v-comment-info": "./childCpns/v-comment-info/v-comment-info"
+  },
+  "navigationBarTitleText": "商品详情"
+}

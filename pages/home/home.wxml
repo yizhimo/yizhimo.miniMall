@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 
 <!-- 轮播图展示 -->
-<v-swiper banners="{{banners}}"/>
+<v-swiper class="swiper" banners="{{banners}}"/>
 
 <!-- 推荐信息展示 -->
 <v-recommend recommend="{{recommend}}"  bind:imageLoad="imgLoad"/>
