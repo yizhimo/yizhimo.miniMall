@@ -3,7 +3,11 @@ import {
   getDetail,
   GoodsBaseInfo,
   ShopInfo,
-  ParamInfo} from '../../service/detail.js'
+  ParamInfo 
+} from '../../service/detail.js'
+
+// 获取app实例
+const app = getApp()
 
 Page({
   /**
@@ -30,7 +34,6 @@ Page({
 
     //请求数据
     this._getDetail()
-    this._getRecommends()
   },
   _getDetail() {
     getDetail(this.data.iid).then(res => {
@@ -63,7 +66,23 @@ Page({
       })
     })
   },
-  _getRecommends() {
+  onAddCart() {
+    // 获取商品对象
+    const obj = {}
+    obj.iid = this.data.iid;
+    obj.imageURL = this.data.topImages[0];
+    obj.title = this.data.baseInfo.title;
+    obj.desc = this.data.baseInfo.desc;
+    obj.price = this.data.baseInfo.realPrice;
 
+    // 加入到购物车列表
+    app.addToCart(obj)
+
+    // 提示用户添加成功
+    wx.showToast({
+      title: '添加成功',
+      icon: 'success',
+      duration: 1000
+    })
   }
 })

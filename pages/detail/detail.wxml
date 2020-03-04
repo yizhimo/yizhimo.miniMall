@@ -19,3 +19,5 @@
   <!-- 推荐信息 -->
   <v-comment-info commentInfo="{{commentInfo}}"/>
 </scroll-view>
+<!-- 底部按钮 -->
+<v-bottom-bar bind:addcart="onAddCart"/>

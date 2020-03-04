@@ -18,7 +18,6 @@ export class GoodsBaseInfo {
     this.discount = itemInfo.discountDesc
     this.columns = columns
     this.services = services
-
     this.realPrice = itemInfo.lowNowPrice
   }
 }

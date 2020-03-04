@@ -1,2 +1,12 @@
 <!--pages/cart/cart.wxml-->
-<text>正在施工。。。</text>
+<view class='cart'>
+  <scroll-view class='cart-list' scroll-y>
+    <block wx:for="{{cartList}}" wx:key="index">
+      <v-cart-list goods="{{item}}" index="{{index}}"/>
+    </block>
+  </scroll-view>
+  <v-bottom selected="{{isSelectAll}}" 
+              price="{{totalPrice}}"
+              counter="{{totalCounter}}"
+              bindtap="onSelectAll"/>
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-check-icon": "/components/v-check-icon/v-check-icon"
+  }
+}
