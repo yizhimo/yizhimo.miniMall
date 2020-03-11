@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "v-user": "./childCpns/v-user/v-user",
+    "v-list-view": "./childCpns/v-list-view/v-list-view"
+  },
+  "navigationBarTitleText": "个人信息"
 }

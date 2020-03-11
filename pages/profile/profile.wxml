@@ -1,2 +1,3 @@
 <!--pages/profile/profile.wxml-->
-<text>正在施工。。。</text>
+<v-user/>
+<v-list-view/>
