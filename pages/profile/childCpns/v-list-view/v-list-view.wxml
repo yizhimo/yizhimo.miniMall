@@ -1,2 +1,26 @@
 <!--pages/profile/childCpns/v-list-view/v-list-view.wxml-->
-<text>pages/profile/childCpns/v-list-view/v-list-view.wxml</text>
+<view class="listview">
+  <view class="xiaoxi">
+    <image src="/assets/images/profile/message.png"/>
+    <span>我的消息</span>
+  </view>
+  <view class="xiaoxi">
+    <image src="/assets/images/profile/cart.png"/>
+    <span>我的商品</span>
+  </view>
+  <view class="xiaoxi">
+    <image src="/assets/images/profile/app.png"/>
+    <span>我的背包</span>
+  </view>
+
+  <view class="set">
+    <view class="setIn">
+      <image src="/assets/images/profile/pointer.png"/>
+      <span>积分</span>
+    </view>
+    <view class="setIn">
+      <image src="/assets/images/profile/vip.png"/>
+      <span>会员</span>
+    </view>
+  </view>
+</view>

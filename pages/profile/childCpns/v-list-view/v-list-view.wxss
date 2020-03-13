@@ -1,1 +1,32 @@
 /* pages/profile/childCpns/v-list-view/v-list-view.wxss */
+.listview {
+  padding: 16rpx 10rpx 0 10rpx;
+  border-top: solid 10rpx #f2f2f2;
+  color: #666;
+}
+.listview image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-top: 44rpx;
+}
+.xiaoxi {
+  position: relative;
+  padding: 0 10rpx 4rpx 20rpx;
+  border-bottom: solid 4rpx #f2f2f2;
+}
+.xiaoxi span{
+  position: absolute;
+  margin: 40rpx 0 0 40rpx;
+}
+.set {
+  margin-top: 32rpx;
+}
+.setIn {
+  position: relative;
+  padding: 0 10rpx 4rpx 20rpx;
+  border-bottom: solid 4rpx #f2f2f2;
+}
+.setIn span{
+  position: absolute;
+  margin: 40rpx 0 0 40rpx;
+}
